@@ -1,0 +1,53 @@
+<div>
+<form novalidate class="css-form" name="myForm">
+
+<div>
+	
+		<div id="form_container"  >	
+								
+			<ul>			
+					<li id="li_1" >
+							<label class="description" for="element_1">Datos de contacto </label>
+							
+							<label>Nombre(s)</label>
+								<input id="element_1_1" name="input" class="element text" maxlength="255" size="8" value="" placeholder="Ingresar Nombre(s) " type="text" style=" width: 30%;" ng-model="nombres" required="required" />
+															
+								<label>Apellido(s)</label>
+							
+								<input id="element_1_2" name= "element_1_2" class="element text" maxlength="255" size="14" value="" placeholder="Ingresar Apellido(s)" type="text" style=" width: 30%; border-radius: 30;" ng-model="apellidos"required="required"  />
+															
+					</li>	
+						<br />
+					<li id="li_2" >
+							<label class="description" for="element_2">Identificación </label>
+							<div>
+								<input id="element_2" name="element_2" class="element text medium" type="text" minlength="8" maxlength="255" value="" placeholder="Ingresar documento de identificación" style="width: 100%" ng-model="identificacion" required="required"  /> 
+							</div>
+							</li>		
+							<li id="li_3" >
+							<label class="description" for="element_3">Número de contacto </label>							
+							
+								<input id="element_3_2" name="element_3_2" class="element text" style="width: 100%" size="10" minlength="6" maxlength="10" value="" type="text" placeholder="ejemplo 035 xxx-xxx ó 300 xxx-xxxx" ng-model="numero" required="required" /> 
+												
+							
+					</li>		
+
+					<li id="li_4" >
+						<label class="description" for="element_4">Email </label>
+						<div>
+							<input id="element_4" name="element_4" class="element text medium" type="email" maxlength="255" value="" placeholder="ejemplo@ejemplo.com" style="width: 100%" ng-model="email" required="required"  /> 
+						</div>
+					</li>
+						<br />
+					
+						<input type="submit" class="btn btn-primary" ng-show="myForm.$valid" ng-click="startChat()" value="Iniciar Chat	" />		
+					
+			</ul>
+	
+		
+	</div>
+	</div>
+	
+</form>
+	
+</div>
